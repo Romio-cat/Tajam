@@ -23,8 +23,8 @@ body
 	min-width: 320px
 
 .main-head
+	min-height: 670px
 	width: 100%
-	max-height: 670px
 	background-color: #fff
 	background-image: url("../img/header.jpg")
 	background-repeat: no-repeat
@@ -37,7 +37,7 @@ body
 	background-image: -webkit-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%)
 	background-image: -ms-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%)
 	opacity: 0.851
-	height: 100%
+	min-height: 670px
 
 .container
 	max-width: 960px
@@ -48,7 +48,8 @@ body
 	padding-top: 16px
 .navbar .logo
 	display: flex
-	flex: 30%
+	flex: 20%
+	margin-left: 10px
 	span
 		margin-left: 10px
 		color: $main
@@ -56,31 +57,41 @@ body
 		line-height: 1.6
 
 .navbar .menu
-	flex: 70%
+	flex: 80%
 	align-self: center
-	ul
-		display: flex
-		justify-content: flex-end
-		li
-			margin-left: 25px
-			display: inline-block
-			&:hover
-				a
-					color: $main
-			a
-				color: white
-				transition: all .2s
-				+font($r, 13px, 700)
-			.active
-				color: $main
-		.menu-icon
-			display: none
-		
+	margin-right: 10px
+	display: flex
+	justify-content: flex-end
+	overflow: hidden
+	a
+		margin-left: 25px
+		color: white
+		transition: all .2s
+		+font($r, 14px, 700)
+		&:hover
+			color: $main
+	.active
+			color: $main
+	.menu-icon
+		display: none
+	.bar1, .bar2, .bar3 
+		width: 30px
+		height: 4px
+		background-color: white
+		margin: 6px 0
+		transition: all .3s ease
+	.change .bar1 
+		transform: rotate(-45deg) translate(-6.5px, 7px)
+	.change .bar2 
+		opacity: 0
+	.change .bar3 
+		transform: rotate(45deg) translate(-6.5px, -8px)		
 
 .header-slides
 	padding: 150px 94px 126px
 	text-align: center
 	color: white
+	// max-height: 300px
 	h1
 		+font($pd, 32px, 900)
 		&:after
@@ -91,6 +102,7 @@ body
 			background-color: $main
 			margin: 27px auto 30px
 	p
+		min-height: 60px
 		+font($r, 14px, 300)
 		line-height: 1.6
 
@@ -101,8 +113,12 @@ body
 	padding: 14px 15px
 	border: 1px solid $main
 	text-transform: uppercase
-  border-radius: 2px
+	border-radius: 2px
 	margin-top: 53px
+	transition: all .3s ease
+	&:hover
+		color: #000
+		background-color: $main
 
 .dot-container
 	text-align: center
@@ -130,7 +146,26 @@ body
 	to 
 		opacity: 1
 
-
+.about 
+	.container
+		display: flex
+		align-items: center
+		min-height: 400px
+		.image-block
+			flex: 40%
+			text-align: center
+			img
+				max-height: 230px
+		.text-block
+			flex: 60%
+			h2
+				+font($pd, 22px, 700)
+				margin-bottom: 20px
+			p
+				+font($r, 14px, 300)
+				line-height: 1.6
+			.link	
+				margin: 0
 
 
 

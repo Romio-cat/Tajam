@@ -1,15 +1,21 @@
+// Изменение иконки меню
 function menuIconChange(x) {
   x.classList.toggle("change");
 };
+// Открытие и закрытие меню при клике на крестик
+var menu = document.getElementById("topMenu");
+var hamburger = document.querySelector('.menu-icon');
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+function responsiveMenu() {
+  menu.classList.toggle('responsive');
+  if (menu.className === "menu") {
+	  hamburger.style.position = "absolute";
+	} else {
+	  hamburger.style.position = "fixed";
+	}
+};
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-
+// Слайдер
 var slideIndex = 0;
 showSlides();
 
@@ -30,3 +36,8 @@ function showSlides() {
 
 	setTimeout(showSlides, 3000); 
 };
+
+
+var c = document.getElementsByClassName("menu-content").getElementsByTagName("a");
+// var b = c.getElementsByTagName("a");
+alert(c);

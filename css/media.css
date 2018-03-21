@@ -1,49 +1,95 @@
 @media screen and (max-width: 992px) {
-	.navbar .menu li:not(:last-child) {display: none;}
-	.navbar .logo {margin-left: 20px;}
-	.navbar .menu ul .menu-icon {
-		display: inline-block;
-		cursor: pointer;
-		margin-right: 20px;
-		position: fixed;
-		top: 20px;
-		right: 20px;
-		z-index: 9999
+	.main-head {
+		min-height: 500px;
 	}
-	.menu-icon .bar1, .bar2, .bar3 {
-		width: 35px;
-		height: 5px;
-		background-color: white;
-		margin: 6px 0;
-		transition: 0.4s;
-		
+	.overlay { min-height: 500px; }
+	.header-slides {
+    padding: 80px 94px 80px;
+    text-align: center;
+    color: white;
 	}
-	.change .bar1 {
-		transform: rotate(-45deg) translate(-8px, 7px);
+	.header-slides p {
+		min-height: 100px
 	}
-	.change .bar2 {
-		opacity: 0;
+	.header-slides .link {
+		margin-top: 10px;
 	}
-	.change .bar3 {
-		transform: rotate(45deg) translate(-8px, -8px);
+	.dot-container .dot {
+		margin-bottom: 20px;
 	}
-	.navbar {display: block}
-	.menu {
+}
+
+
+@media screen and (max-width: 800px) {
+	.navbar .menu { display: block; }
+	.menu a { display: none; }
+	.navbar .menu a.menu-icon {
+		float: right; 
 		display: block;
-		position: absolute;
+		position: absolute;	
+		right: 20px; 
+		top: 20px;
+		transition: all 1s ease
+	}
+	.responsive { 
+		position: absolute; 
 		top: 0;
 		left: 0;
-		background-color: rgba(51,51,51,.7);
-		z-index: 10
-		width: 250px;
-		height: 250px;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+	}
+	.menu.responsive .menu-content {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		padding-top: 10%;
+	}
+	.menu.responsive a:not(:last-child) {
+		display: block;
+		text-align: center;
+		padding: 4vh;
+		top: 10px;
+		margin-left: 0;
+	}
+	.menu.responsive a:not(:last-child):hover{
+		background-color: rgba(49,29,94,.8);
 	}
 	.header-slides {
-		max-height: 350px;
-		padding: 70px 20px 20px;
-		z-index: -1
+    padding: 50px 20px 50px;
+    z-index: -1;
+  }
+  .header-slides h1:after {
+		margin: 15px auto;
 	}
-	.header-slides h1 {font-size: 24px;}
-	.header-slides .link {margin: 30px;}
-	.main-head .dot-container .dot {margin: 0 0 30px;}
+	.about .container {
+		/*display: block;*/
+		min-height: 300px;
+	}
+	.about .container .image-block {
+		display: none;
+	}
+/*	.about .container .image-block img {
+		margin: 10px;
+		max-width: 100px;
+		text-align: left;
+		display: inline-block;
+	}*/
+	.about .container .text-block {
+		margin: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+	.about .container .text-block h2 {
+		display: block;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.about .container .text-block .link {
+		display: inline-block;
+		margin: 0 auto;
+	}
 }
+	
+
