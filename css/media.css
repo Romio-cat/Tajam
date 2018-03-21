@@ -2,7 +2,7 @@
 	.main-head {
 		min-height: 500px;
 	}
-	.overlay { min-height: 500px; }
+	.main-head .overlay { min-height: 500px; }
 	.header-slides {
     padding: 80px 94px 80px;
     text-align: center;
@@ -17,6 +17,9 @@
 	.dot-container .dot {
 		margin-bottom: 20px;
 	}
+	/*.about .video iframe {
+		min-height: 400px
+	}*/
 }
 
 
@@ -90,6 +93,9 @@
 		display: inline-block;
 		margin: 0 auto;
 	}
+	/*.about .video iframe {
+		min-height: 250px
+	}*/
 }
 	
 

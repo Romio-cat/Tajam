@@ -37,7 +37,11 @@ function showSlides() {
 	setTimeout(showSlides, 3000); 
 };
 
+// включение видео
+$(document).on('click', '.fa-play-circle', function() {
+  var $video = $('#video'),
+      src = $video.attr('src');
 
-var c = document.getElementsByClassName("menu-content").getElementsByTagName("a");
-// var b = c.getElementsByTagName("a");
-alert(c);
+  $video.attr('src', src + '?autoplay=1');
+  $(".play").hide();
+});

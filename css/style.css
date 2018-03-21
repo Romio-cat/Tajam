@@ -27,7 +27,7 @@ body {
   background-image: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
   background-image: -ms-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
   opacity: 0.851;
-  min-height: 670px; }
+  height: 100%; }
 
 .container {
   max-width: 960px;
@@ -62,7 +62,7 @@ body {
     transition: all .2s;
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: 700; }
+    font-weight: 900; }
     .navbar .menu a:hover {
       color: #00e0d0; }
   .navbar .menu .active {
@@ -110,7 +110,7 @@ body {
   font-weight: 300;
   display: inline-block;
   color: #00e0d0;
-  padding: 14px 15px;
+  padding: 15px 25px;
   border: 1px solid #00e0d0;
   text-transform: uppercase;
   border-radius: 2px;
@@ -146,26 +146,70 @@ body {
   to {
     opacity: 1; } }
 
-.about .container {
-  display: flex;
-  align-items: center;
-  min-height: 400px; }
-  .about .container .image-block {
-    flex: 40%;
+.about {
+  max-height: 950px; }
+  .about .container {
+    display: flex;
+    align-items: center;
+    min-height: 400px; }
+    .about .container .image-block {
+      flex: 40%;
+      text-align: center; }
+      .about .container .image-block img {
+        max-height: 230px; }
+    .about .container .text-block {
+      flex: 60%; }
+      .about .container .text-block h2 {
+        font-family: "Playfair Display";
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px; }
+      .about .container .text-block p {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.6; }
+      .about .container .text-block .link {
+        margin: 0; }
+
+.video {
+  width: 100%;
+  position: relative; }
+  .video iframe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 80vh; }
+  .video .play {
+    position: absolute;
+    background-image: url("../img/video-bd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0; }
+    .video .play .watch-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: white; }
+      .video .play .watch-block .fa-play-circle {
+        font-size: 60px;
+        cursor: pointer;
+        font-weight: 100; }
+      .video .play .watch-block p {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 900;
+        margin-top: 15px; }
+
+.expertise {
+  max-height: 800px;
+  padding-top: 70px; }
+  .expertise .capture {
     text-align: center; }
-    .about .container .image-block img {
-      max-height: 230px; }
-  .about .container .text-block {
-    flex: 60%; }
-    .about .container .text-block h2 {
-      font-family: "Playfair Display";
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 20px; }
-    .about .container .text-block p {
-      font-family: "Roboto";
-      font-size: 14px;
-      font-weight: 300;
-      line-height: 1.6; }
-    .about .container .text-block .link {
-      margin: 0; }
