@@ -13,14 +13,15 @@ body {
   min-width: 320px; }
 
 .main-head {
-  min-height: 670px;
+  max-height: 700px;
   width: 100%;
   background-color: #fff;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .overlay {
   background-image: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%);
@@ -185,10 +186,9 @@ body {
     background-image: url("../img/video-bd.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 100%;
     width: 100%;
     height: 100%;
-    z-index: 999;
     top: 0;
     left: 0; }
     .video .play .watch-block {
@@ -201,7 +201,8 @@ body {
       .video .play .watch-block .fa-play-circle {
         font-size: 60px;
         cursor: pointer;
-        font-weight: 100; }
+        font-weight: 100;
+        z-index: 10; }
       .video .play .watch-block p {
         font-family: "Roboto";
         font-size: 16px;
@@ -209,7 +210,139 @@ body {
         margin-top: 15px; }
 
 .expertise {
-  max-height: 800px;
-  padding-top: 70px; }
-  .expertise .capture {
+  min-height: 600px; }
+
+.capture {
+  padding-top: 70px;
+  text-align: center;
+  margin-bottom: 50px; }
+  .capture h2 {
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    color: #413d4b; }
+  .capture p {
+    font-family: "Playfair Display";
+    font-size: 14px;
+    font-weight: 400;
+    color: #636268;
+    line-height: 1.6;
+    margin-top: 10px; }
+    .capture p:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #c6c4c9;
+      margin: 15px auto; }
+
+.expert-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin-bottom: 70px; }
+  .expert-container .expert-block {
+    padding: 30px; }
+    .expert-container .expert-block .expert-img-block {
+      min-height: 60px;
+      position: relative; }
+      .expert-container .expert-block .expert-img-block img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+    .expert-container .expert-block h5 {
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 900;
+      margin: 20px 0; }
+    .expert-container .expert-block p {
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 300;
+      color: #666666;
+      line-height: 1.6; }
+  .expert-container .first, .expert-container .second, .expert-container .fourth, .expert-container .fifth {
+    border-right: 1px solid #ebebeb; }
+  .expert-container .first, .expert-container .second, .expert-container .third {
+    border-bottom: 1px solid #ebebeb; }
+
+.team {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto; }
+  .team .container {
     text-align: center; }
+    .team .container .capture h2 {
+      color: white; }
+    .team .container .capture p {
+      color: #f9f9f9; }
+      .team .container .capture p:after {
+        background-color: #655c80; }
+    .team .container p {
+      color: white;
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center; }
+    .team .container .link {
+      text-align: center;
+      display: inline-block;
+      margin: 20px auto 70px; }
+
+.team-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 70px;
+  grid-column-gap: 20px; }
+
+.worker {
+  display: inline-block;
+  width: 100%;
+  position: relative; }
+  .worker figure {
+    width: 100%; }
+    .worker figure img {
+      width: 100%; }
+
+.worker-info {
+  margin-top: -5px;
+  padding: 20px 0;
+  border: 1px solid #7b7890;
+  color: white; }
+  .worker-info h6 {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 5px; }
+  .worker-info p {
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 300; }
+
+.works {
+  min-height: 700px; }
+  .works .work-head {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 70px 0;
+    align-items: center;
+    justify-content: space-between;
+    color: #413d4b;
+    border: 1px solid red; }
+    .works .work-head h2 {
+      font-family: "Playfair Display";
+      font-size: 22px;
+      font-weight: 900; }
+    .works .work-head p {
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 400; }
+      .works .work-head p span {
+        font-size: 20px; }

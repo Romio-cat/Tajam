@@ -23,7 +23,7 @@ body
 	min-width: 320px
 
 .main-head
-	min-height: 670px
+	max-height: 700px
 	width: 100%
 	background-color: #fff
 	background-image: url("../img/header.jpg")
@@ -31,6 +31,7 @@ body
 	background-position: center center
 	background-size: cover
 	position: relative
+	z-index: 2
 
 .overlay 
 	background-image: -moz-linear-gradient( 0deg, rgb(9,5,47) 0%, rgb(49,29,94) 100%)
@@ -181,10 +182,10 @@ body
 		background-image: url("../img/video-bd.jpg")
 		background-size: cover
 		background-repeat: no-repeat
-		background-position: center center
+		background-position: center 100%
 		width: 100%
 		height: 100%
-		z-index: 999
+		// z-index: 999
 		top: 0
 		left: 0
 		.watch-block
@@ -198,18 +199,131 @@ body
 				font-size: 60px
 				cursor: pointer
 				font-weight: 100
+				z-index: 10
 			p
 				+font($r, 16px, 900)
 				margin-top: 15px
 
 .expertise
-	max-height: 800px
+	min-height: 600px
+	
+.capture
 	padding-top: 70px
-	.capture
+	text-align: center
+	margin-bottom: 50px
+	h2
+		+font($pd, 22px, 700)
+		color: #413d4b
+	p
+		+font($pd, 14px, 400)
+		color: #636268
+		line-height: 1.6
+		margin-top: 10px
+		&:after
+			content: ""
+			display: block
+			width: 50px	
+			height: 1px	
+			background-color: #c6c4c9
+			margin: 15px auto
+
+.expert-container
+	display: grid
+	grid-template-columns: auto auto auto
+	text-align: center
+	margin-bottom: 70px
+	.expert-block
+		padding: 30px
+		.expert-img-block
+			min-height: 60px
+			position: relative
+			img
+				position: absolute
+				margin: auto
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+		h5
+			+font($r, 14px, 900)
+			margin: 20px 0
+		p
+			+font($r, 14px, 300)
+			color: #666666
+			line-height: 1.6
+	.first, .second, .fourth, .fifth
+		border-right: 1px solid #ebebeb
+	.first, .second, .third
+		border-bottom: 1px solid #ebebeb
+		
+.team
+	background-image: url("../img/bg.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	width: 100%
+	height: auto
+	.container
 		text-align: center
+		.capture
+			h2
+				color: white
+			p
+				color: #f9f9f9
+				&:after
+					background-color: #655c80
+		p
+			color: white
+			+font($r, 14px, 300)
+			text-align: center
+		.link	
+			text-align: center
+			display: inline-block
+			margin: 20px auto 70px
 
+.team-block
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr
+	// // justify-content: space-evenly
+	margin-bottom: 70px
+	grid-column-gap: 20px
+.worker
+	display: inline-block
+	width: 100%
+	position: relative
+	figure
+		width: 100% 
+		img
+			width: 100% // растянуть
+.worker-info
+	margin-top: -5px
+	padding: 20px 0
+	border: 1px solid #7b7890
+	color: white
+	h6
+		+font($r, 14px, 900)
+		margin-bottom: 5px
+	p
+		+font($r, 13px, 300)
 
-
+.works
+	min-height: 700px
+	.work-head
+		display: flex
+		max-width: 960px
+		margin: 0 auto
+		padding: 70px 0
+		align-items: center
+		justify-content: space-between
+		color: #413d4b
+		border: 1px solid red
+		h2
+			+font($pd, 22px, 900)
+			
+		p
+			+font($r, 14px, 400)
+			span
+				font-size: 20px
 
 
 
