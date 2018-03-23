@@ -326,7 +326,8 @@ body {
     font-weight: 300; }
 
 .works {
-  min-height: 700px; }
+  min-height: 700px;
+  width: 100%; }
   .works .work-head {
     display: flex;
     max-width: 960px;
@@ -334,8 +335,7 @@ body {
     padding: 70px 0;
     align-items: center;
     justify-content: space-between;
-    color: #413d4b;
-    border: 1px solid red; }
+    color: #413d4b; }
     .works .work-head h2 {
       font-family: "Playfair Display";
       font-size: 22px;
@@ -346,3 +346,18 @@ body {
       font-weight: 400; }
       .works .work-head p span {
         font-size: 20px; }
+  .works .work-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    grid-row-gap: 0; }
+    .works .work-block .work-example {
+      display: inline-block;
+      width: 100%;
+      position: relative; }
+      .works .work-block .work-example figure {
+        width: 100%;
+        height: 100%; }
+        .works .work-block .work-example figure img {
+          width: 100%; }
