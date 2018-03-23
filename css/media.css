@@ -19,6 +19,12 @@
 	/*.about .video iframe {
 		min-height: 400px
 	}*/
+	.works .work-head {
+		padding: 70px 20px;
+	}
+	.works .work-block{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
 }
 
 
@@ -118,6 +124,15 @@
 	.team-block .worker {
 		margin-bottom: 20px;
 	}
+	.works .work-head {
+		padding: 50px 20px;
+	}
+	.works .work-block{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.works .link {
+		margin: 20px;
+	}
 }
 	
 
@@ -144,5 +159,8 @@
 	.expert-container .first, .expert-container .second, .expert-container .third,
 	.expert-container .fourth, .expert-container .fifth {
 		border-bottom: 1px solid #ebebeb;
+	}
+	.works .work-block{
+		grid-template-columns: 1fr 1fr ;
 	}
 }

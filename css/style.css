@@ -201,8 +201,7 @@ body {
       .video .play .watch-block .fa-play-circle {
         font-size: 60px;
         cursor: pointer;
-        font-weight: 100;
-        z-index: 10; }
+        font-weight: 100; }
       .video .play .watch-block p {
         font-family: "Roboto";
         font-size: 16px;
@@ -327,7 +326,8 @@ body {
 
 .works {
   min-height: 700px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .works .work-head {
     display: flex;
     max-width: 960px;
@@ -340,24 +340,71 @@ body {
       font-family: "Playfair Display";
       font-size: 22px;
       font-weight: 900; }
-    .works .work-head p {
+    .works .work-head a {
       font-family: "Roboto";
       font-size: 14px;
       font-weight: 400; }
-      .works .work-head p span {
+      .works .work-head a span {
         font-size: 20px; }
   .works .work-block {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     height: 100%;
-    width: 100%;
-    grid-row-gap: 0; }
+    width: 100%; }
     .works .work-block .work-example {
       display: inline-block;
       width: 100%;
       position: relative; }
-      .works .work-block .work-example figure {
+      .works .work-block .work-example .photo {
         width: 100%;
         height: 100%; }
-        .works .work-block .work-example figure img {
+        .works .work-block .work-example .photo img {
           width: 100%; }
+  .works .link {
+    margin: 70px; }
+
+.testimonials {
+  min-width: 400px;
+  text-align: center;
+  background-image: url("../img/bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  color: white; }
+  .testimonials .container {
+    padding: 70px 0; }
+  .testimonials span {
+    display: inline-block;
+    font-size: 80px; }
+  .testimonials .testimonials-slider-container {
+    max-width: 700px;
+    margin: 0 auto; }
+    .testimonials .testimonials-slider-container p:first-child {
+      display: flex;
+      align-items: center;
+      font-family: "Playfair Display";
+      font-size: 16px;
+      font-weight: 400;
+      min-height: 150px;
+      vertical-align: middle;
+      line-height: 1.6; }
+  .testimonials .worker-info {
+    border: none;
+    padding: 50px; }
+  .testimonials .prev, .testimonials .next {
+    font-size: 30px;
+    vertical-align: middle;
+    margin: 0 20px;
+    cursor: pointer; }
+  .testimonials .avatar-container {
+    display: inline-block; }
+    .testimonials .avatar-container .ava-dot {
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 10px;
+      transform: scale 2, 2; }
+      .testimonials .avatar-container .ava-dot:last-child {
+        margin-right: 0; }
+    .testimonials .avatar-container .active-ava {
+      width: 70px; }
