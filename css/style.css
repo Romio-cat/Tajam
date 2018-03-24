@@ -408,3 +408,46 @@ body {
         margin-right: 0; }
     .testimonials .avatar-container .active-ava {
       width: 70px; }
+
+.contact {
+  min-height: 600px; }
+  .contact .container {
+    display: flex;
+    padding: 70px 0;
+    justify-content: space-between; }
+    .contact .container h2 {
+      font-family: "Playfair Display";
+      font-size: 22px;
+      font-weight: 900;
+      color: #413d4b; }
+    .contact .container form {
+      flex: 50%; }
+      .contact .container form h2 {
+        margin-bottom: 35px; }
+      .contact .container form input, .contact .container form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 300;
+        padding: 10px; }
+      .contact .container form textarea {
+        height: 150px; }
+      .contact .container form .link {
+        display: inline-block;
+        margin-top: 0; }
+    .contact .container .client {
+      flex: 50%;
+      padding-left: 100px; }
+      .contact .container .client h2 {
+        margin-bottom: 20px; }
+      .contact .container .client .client-logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center; }
+        .contact .container .client .client-logo figure {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 80px; }

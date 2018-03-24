@@ -384,3 +384,44 @@ body
 				margin-right: 0
 		.active-ava
 			width: 70px
+
+.contact
+	min-height: 600px
+	.container
+		display: flex
+		padding: 70px 0
+		justify-content: space-between
+		h2
+			+font($pd, 22px, 900)
+			color: #413d4b
+		form
+			flex: 50%
+			h2
+				margin-bottom: 35px
+			input, textarea
+				width: 100%
+				margin-bottom: 20px
+				+font($r, 14px, 300)
+				padding: 10px
+			textarea
+				height: 150px	
+			.link	
+				display: inline-block
+				margin-top: 0
+		.client
+			// border: 1px solid red
+			flex: 50%
+			padding-left: 100px //10%
+			h2
+				margin-bottom: 20px
+			.client-logo
+				display: grid
+				grid-template-columns: repeat(2, 1fr)
+				align-content: center
+				
+				figure
+					width: 100%
+					display: flex
+					align-items: center
+					justify-content: center
+					min-height: 80px
