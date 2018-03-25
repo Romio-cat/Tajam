@@ -133,6 +133,43 @@
 	.works .link {
 		margin: 20px;
 	}
+	.testimonials .container {
+    padding: 20px 0;
+	}
+	.contact .container {
+    padding: 20px;
+    flex-direction: column;
+	}
+	.contact .container form {
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	.contact .container form .link {
+    display: inline-block;
+    margin-top: 0;
+	}
+	.contact .container .client {
+		padding: 0;
+		text-align: center;
+	}
+	.main-foot .foot-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    margin-bottom: 30px;
+	}
+	.main-foot .foot-description h6 {
+		margin: 40px 0 20px
+	}
+	.main-foot .copyright {
+    flex-direction: column;
+	}
+	.main-foot .copyright .help {
+		margin-bottom: 20px;
+	}
+	.main-foot .container {
+		padding: 20px;
+	}
 }
 	
 
@@ -162,5 +199,8 @@
 	}
 	.works .work-block{
 		grid-template-columns: 1fr 1fr ;
+	}
+	.prev, .next {
+		display: none;
 	}
 }

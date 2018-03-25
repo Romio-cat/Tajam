@@ -48,10 +48,10 @@ body
 .navbar
 	display: flex
 	padding-top: 16px
-.navbar .logo
+.logo
 	display: flex
 	flex: 20%
-	margin-left: 10px
+	// margin-left: 10px
 	span
 		margin-left: 10px
 		color: $main
@@ -119,7 +119,7 @@ body
 	margin-top: 53px
 	transition: all .3s ease
 	&:hover
-		color: #000
+		color: #413d4b
 		background-color: $main
 
 .dot-container
@@ -194,6 +194,8 @@ body
 			justify-content: center
 			align-items: center
 			height: 100%
+			// position: relative
+			// margin: auto auto
 			color: white
 			.fa-play-circle
 				font-size: 60px
@@ -321,6 +323,7 @@ body
 			+font($pd, 22px, 900)
 			
 		a
+			color: #413d4b
 			+font($r, 14px, 400)
 			span
 				font-size: 20px
@@ -338,11 +341,12 @@ body
 				height: 100%
 				img
 					width: 100%
+					display: block
 	.link	
 		margin: 70px
 
 .testimonials
-	min-width: 400px
+	min-height: 400px
 	text-align: center
 	background-image: url("../img/bg2.jpg")
 	background-size: cover
@@ -358,6 +362,7 @@ body
 	.testimonials-slider-container
 		max-width: 700px
 		margin: 0 auto
+		padding: 0 20px
 		p:first-child
 			display: flex
 			align-items: center
@@ -411,7 +416,7 @@ body
 		.client
 			// border: 1px solid red
 			flex: 50%
-			padding-left: 100px //10%
+			padding-left: 10% //10%
 			h2
 				margin-bottom: 20px
 			.client-logo
@@ -425,3 +430,84 @@ body
 					align-items: center
 					justify-content: center
 					min-height: 80px
+
+.main-foot
+	min-height: 400px
+	background-image: url("../img/footer.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	width: 100%
+	color: white
+	.container
+		padding: 70px 0
+	.foot-description
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		align-content: space-between
+		margin-bottom: 80px
+		p
+			+font($r, 14px, 300)
+			line-height: 1.6
+		.foot-conpany
+			padding-right: 20px
+			.logo
+				margin-bottom: 30px
+				margin-left: 0
+		h6
+			+font($r, 15px, 900)
+			margin: 20px 0 40px
+		.company-adress
+			padding-right: 20px
+
+			span
+				+font($r, 14px, 300)
+				line-height: 1.6
+			i
+				margin-right: 10px					
+		.social
+			input
+				padding: 10px
+				background: transparent
+				border: 1px solid #9d97af
+				width: 75%
+			button
+				font-size: 16px
+				background-color: #a199b3
+				border: none
+				padding: 10px
+				width: 23%
+				transition: all .3s ease
+				&:hover
+					background-color: #000
+					color: white
+			.social-icon
+				margin-top: 20px
+				.fa-facebook-f
+					padding: 10px 15px
+				.fa-instagram
+					padding: 10px 12px
+				.fa-dribbble
+					padding: 10px 11px
+				.fa-google-plus-g, .fa-youtube
+					padding: 10px 9px
+				i
+					padding: 10px 
+					border: 1px solid white
+					transition: all .3s ease
+					font-size: 16px
+					color: white
+					border-radius: 50%
+					margin-right: 10px
+					&:hover
+						color: $main
+						border: 1px solid $main
+	.copyright
+		display: flex
+		justify-content: space-between
+		a
+			color: white
+			margin-right: 30px
+			transition: all .3s ease
+			&:hover
+				color: $main
